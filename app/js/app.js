@@ -8,6 +8,7 @@ angular.module('myApp', [
   'myApp.services',
   'myApp.directives',
   'myApp.controllers'
+
 ]).
 config(['$routeProvider', function($routeProvider) {
   $routeProvider.when('/images', {templateUrl: 'partials/images.html', controller: 'imageBrowseCtrl'});
