@@ -1,5 +1,18 @@
 <p>Add your images here.</p>
-<div flow-init>
-	<input type="file" flow-btn flow-directory />
 
+<div flow-init="{target: '/upload'}"
+     flow-files-submitted="$flow.upload()"
+     flow-file-success="$file.msg = $message">
+
+	  <input type="file" flow-btn/>
+	  <button class="btn" flow-btn>Upload File</button>
+
+  <table>
+    <tr ng-repeat="file in $flow.files">
+        <td>{{$index+1}}</td>
+        <td>{{file.name}}</td>
+        <td>{{file.msg}}</td>
+    </tr>
+  </table>
 </div>
+

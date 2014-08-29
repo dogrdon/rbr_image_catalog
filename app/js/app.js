@@ -11,6 +11,6 @@ angular.module('myApp', [
 ]).
 config(['$routeProvider', function($routeProvider) {
   $routeProvider.when('/images', {templateUrl: 'partials/images.html', controller: 'imageBrowseCtrl'});
-  $routeProvider.when('/upload', {templateUrl: 'partials/add_image.html', controller: 'imageUploadCtrl'});
+  $routeProvider.when('/add_image', {templateUrl: 'partials/add_image.html', controller: 'imageUploadCtrl'});
   $routeProvider.otherwise({redirectTo: '/images'});
 }]);
