@@ -3,9 +3,9 @@
 /* Controllers */
 
 angular.module('myApp.controllers', [])
-  .controller('MyCtrl1', ['$scope', function($scope) {
+  .controller('imageBrowseCtrl', ['$scope', function($scope) {
 
   }])
-  .controller('MyCtrl2', ['$scope', function($scope) {
+  .controller('imageUploadCtrl', ['$scope', function($scope) {
 
   }]);

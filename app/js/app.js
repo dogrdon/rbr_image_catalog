@@ -10,7 +10,7 @@ angular.module('myApp', [
   'myApp.controllers'
 ]).
 config(['$routeProvider', function($routeProvider) {
-  $routeProvider.when('/view1', {templateUrl: 'partials/partial1.html', controller: 'MyCtrl1'});
-  $routeProvider.when('/view2', {templateUrl: 'partials/partial2.html', controller: 'MyCtrl2'});
-  $routeProvider.otherwise({redirectTo: '/view1'});
+  $routeProvider.when('/images', {templateUrl: 'partials/images.html', controller: 'imageBrowseCtrl'});
+  $routeProvider.when('/upload', {templateUrl: 'partials/add_image.html', controller: 'imageUploadCtrl'});
+  $routeProvider.otherwise({redirectTo: '/images'});
 }]);
