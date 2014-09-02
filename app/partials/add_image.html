@@ -1,18 +1,14 @@
 <p>Add your images here.</p>
 
-<div flow-init="{target: '/upload'}"
-     flow-files-submitted="$flow.upload()"
-     flow-file-success="$file.msg = $message">
+<div ng-controller="imageUploadCtrl as upload" ng-submit="upload.imageSubmit(image)">
 
-	  <input type="file" flow-btn/>
-	  <button class="btn" flow-btn>Upload File</button>
-
-  <table>
-    <tr ng-repeat="file in $flow.files">
-        <td>{{$index+1}}</td>
-        <td>{{file.name}}</td>
-        <td>{{file.msg}}</td>
-    </tr>
-  </table>
+	  <form ng-model="images">
+	  <label for="title">Title: </label>
+      <input name="title" type="text"/><br/>
+      <label for="image-file"> File to upload: </label>
+      <input name="image-file" type="file"/><br/>
+	    <button name="submit" class="btn" flow-btn>Upload File</button><br/>
+    </form>
+  
 </div>
 
