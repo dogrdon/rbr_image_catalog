@@ -12,10 +12,15 @@
     "bower": "^1.3.1",
     "shelljs": "^0.2.6",
     "karma-junit-reporter": "^0.2.2",
+<<<<<<< HEAD
+    "ng-flow": "~2", 
+    "angular-bootstrap": "^0.11.0"
+=======
     "ng-flow": "~2.1.4",
 	"angular-ui-utils": "^0.1.1",
     "angular-bootstrap": "^0.11.0"
 	
+>>>>>>> 1bc4f6fb6c1e0272722e35525aa5cd02decfdcb1
   },
   "scripts": {
     "postinstall": "bower install",

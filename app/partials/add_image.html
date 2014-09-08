@@ -1,5 +1,21 @@
 <p>Add your images here.</p>
 
+<<<<<<< HEAD
+<div flow-init="{target: '/upload'}"
+     flow-files-submitted="$flow.upload()"
+     flow-file-success="$file.msg = $message">
+
+	  <input type="file" flow-btn/>
+	  <button type="button" class="btn btn-primary" flow-btn>Upload File</button>
+
+  <table>
+    <tr ng-repeat="file in $flow.files">
+        <td>{{$index+1}}</td>
+        <td>{{file.name}}</td>
+        <td>{{file.msg}}</td>
+    </tr>
+  </table>
+=======
 <div id="image-submit-form" class="submit-form" ng-controller="imageUploadCtrl as upload" ng-submit="upload.imageSubmit(image)">
 	
 	<form novalidate class="basic-form">
@@ -10,5 +26,6 @@
 	  <button name="submit" class="btn btn-primary">Upload File</button><br/>
     </form>
   
+>>>>>>> 1bc4f6fb6c1e0272722e35525aa5cd02decfdcb1
 </div>
 
