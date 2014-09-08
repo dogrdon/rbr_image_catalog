@@ -1,13 +1,13 @@
 <p>Add your images here.</p>
 
 <div id="image-submit-form" class="submit-form" ng-controller="imageUploadCtrl as upload" ng-submit="upload.imageSubmit(image)">
-
-	  <form novalidate class="basic-form">
+	
+	<form novalidate class="basic-form">
 	  <label for="title">Title: </label>
-      <input name="title" type="text" ng-model="image.title" required/><br/>
+      <input class="form-control" name="title" type="text" ng-model="image.title" required tooltip="Add an appropriate title for your image."  tooltip-trigger="focus" tooltip-placement="right"/><br/>
       <label for="image-file"> File to upload: </label>
       <input name="image-file" type="file" ng-model="image.file" required/><br/>
-	  <button name="submit" class="btn" flow-btn>Upload File</button><br/>
+	  <button name="submit" class="btn btn-primary">Upload File</button><br/>
     </form>
   
 </div>
