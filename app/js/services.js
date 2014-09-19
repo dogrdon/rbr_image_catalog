@@ -9,7 +9,8 @@
 //  value('version', '0.1');
 
 
-var rbrimageServices = angular.module('rbrimageServices', ['ngResource']);
+
+/*var rbrimageServices = angular.module('rbrimageServices', ['ngResource']);
 
 rbrimageServices.factory('Image', ['$resource',
 	function($resource){
@@ -17,4 +18,4 @@ rbrimageServices.factory('Image', ['$resource',
 			query: {method: 'GET', params:{}, isArray:true}
 		});
 
-	}]);
+	}]); */ 

@@ -1,1 +1,9 @@
 <p>This is all the images you've added.</p>
+<div id="image-list" ng-controller="imageBrowseCtrl">
+	<ul>
+	<li ng-repeat="item in imageData">
+		<p> {{ item.title }}</p>
+		<img class="browse-image" ng-src="{{item.image_path}}"/>
+	</li>
+	</ul>
+</div>

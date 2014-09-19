@@ -3,9 +3,12 @@
 /* Controllers */
 
 angular.module('myApp.controllers', [])
-  .controller('imageBrowseCtrl', ['$scope', function($scope) {
-
+  .controller('imageBrowseCtrl', ['$scope', '$http', function($scope, $http) {
+      $http.get('metadata/dummy.json').success (function(data){
+          $scope.imageData = data;
+      });
   }])
+
   .controller('imageUploadCtrl', ['$scope', function($scope) {
     
     $scope.imageSubmit = function(image){
@@ -16,4 +19,3 @@ angular.module('myApp.controllers', [])
       };
   }]);
 
- 

@@ -5,7 +5,7 @@
 	
 	<form novalidate class="basic-form">
 	  <label for="title">Title: </label>
-      <input class="form-control" name="title" type="text" ng-model="image.title" required tooltip="Add an appropriate title for your image."  tooltip-trigger="focus" tooltip-placement="right"/><br/>
+      <input class="form-control" name="title" type="text" ng-model="image.title"/><br/>
       <label for="image-file"> File to upload: </label>
       <input name="image-file" type="file" ng-model="image.file" required/><br/>
 	  <button name="submit" class="btn btn-primary">Upload File</button><br/>

@@ -7,3 +7,9 @@
 .css-form input.ng-valid.ng-dirty {
   background-color: #78FA89;
 }
+
+/*IMAGES*/
+#image-list .browse-image{
+
+	max-width: 400px;
+}
