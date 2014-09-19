@@ -14,7 +14,7 @@
     "karma-junit-reporter": "^0.2.2",
     "ng-flow": "~2", 
     "angular-bootstrap": "^0.11.0", 
-    "angular-resource": "^1.2.23"
+    "angular-resource": "^0.1.1"
   },
   "scripts": {
     "postinstall": "bower install",
