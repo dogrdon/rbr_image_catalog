@@ -9,7 +9,21 @@
 }
 
 /*IMAGES*/
+
 #image-list .browse-image{
 
 	max-width: 400px;
+}
+
+#image-list ul{
+	width: 100%;
+	overflow: hidden;
+}
+
+#image-list .griddle{
+	padding: 8px;
+	max-width: 48%;
+	min-height: 900px;
+	float:left;
+	clear: right;
 }
