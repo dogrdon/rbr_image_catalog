@@ -20,14 +20,15 @@ angular.module('myApp.controllers', [])
       	};
   }])
   
-  .controller('imageDetailCtrl', ['$scope', '$http', '$routeParams', 
-  	function($scope, $http, $routeParams){
+  .controller('imageDetailCtrl', ['$scope', '$http', '$routeParams', '$filter', 
+  	function($scope, $http, $routeParams, $filter){
 		$http.get('metadata/dummy.json').success (function(data){
-			$scope.imageVar = data;
-			$scope.thisImage = $routeParams.imageId;
 			
-			console.log('hi i am ' + $scope.imageVar);
-			console.log('and my name is ' + $scope.thisImage); //item._id
+			$scope.thisImage = $filter('filter')(data, function(d){return d._id === $routeParams.imageId;})[0];
+			
+			
+			
+			console.log('I am ' + $scope.thisImage); //item._id
 			
 		});
 		
