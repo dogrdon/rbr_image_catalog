@@ -1,4 +1,4 @@
-<div id="image-detail" ng-controller="imageDetailCtrl">
-	<h2> {{image.title}} </h2>
-	<p> {{image.description}} </p>
+<div id="image-detail" ng-model="imageVar">
+	<h2> {{imageVar._id[thisImage].title}} </h2>
+	<p> {{imageVar[thisImage].description}} </p>
 </div>
