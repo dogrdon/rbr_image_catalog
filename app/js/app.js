@@ -12,7 +12,9 @@ angular.module('myApp', [
 
 ]).
 config(['$routeProvider', function($routeProvider) {
-  $routeProvider.when('/images', {templateUrl: 'partials/images.html', controller: 'imageBrowseCtrl'});
-  $routeProvider.when('/add_image', {templateUrl: 'partials/add_image.html', controller: 'imageUploadCtrl'});
-  $routeProvider.otherwise({redirectTo: '/images'});
+  $routeProvider.
+  	when('/images', {templateUrl: 'partials/images.html', controller: 'imageBrowseCtrl'}).
+  	when('/add_image', {templateUrl: 'partials/add_image.html', controller: 'imageUploadCtrl'}).
+  	when('/images/:imageId', {templateUrl: 'partials/image_detail.html', controller: 'imageDetailCtrl'}).
+  	otherwise({redirectTo: '/images'});
 }]);

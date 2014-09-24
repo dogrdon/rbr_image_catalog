@@ -1,8 +1,8 @@
-<p>This is all the images you've added.</p>
+<h2>All Images</h2>
 <div id="image-list" ng-controller="imageBrowseCtrl">
 	<ul>
 	<li class="griddle" ng-repeat="item in imageData">
-		<p> {{ item.title }}</p>
+		<a href="#/images/{{item._id}}"> {{ item.title }}</a>
 		<img class="browse-image" ng-src="{{item.image_path}}"/>
 	</li>
 	</ul>
