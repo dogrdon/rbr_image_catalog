@@ -9,13 +9,19 @@ angular.module('myApp.controllers', [])
       });
   }])
 
-  .controller('imageUploadCtrl', ['$scope', 
-  	function($scope) {
-    
-    	$scope.imageSubmit = function(image){
+  .controller('imageUploadCtrl', ['$scope', '$http', 
+  	function($scope, $http) {
+    	
+		$scope.data = {
+			title: "image title",
+			file: "image_file.png" 
+			
+		};
+		
+    	$scope.imageSubmit = function(form){
 
         	//add image upload logic for submit, still needs 'backend', this obviously doesn't submit diddly
-        	alert(image + ': thanks for adding.')
+        	console.log(form.title  + ' is file: ' + form.file + ' for upload. thanks for adding.');
         
       	};
   }])

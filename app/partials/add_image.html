@@ -1,14 +1,14 @@
 <p>Add your images here.</p>
 
 
-<div id="image-submit-form" class="submit-form" ng-controller="imageUploadCtrl as upload" ng-submit="upload.imageSubmit(image)">
+<div id="image-submit-form" class="submit-form">
 	
-	<form novalidate class="basic-form">
+	<form class="basic-form" ng-controller="imageUploadCtrl" ng-submit="imageSubmit(form)">
 	  <label for="title">Title: </label>
-      <input class="form-control" name="title" type="text" ng-model="image.title"/><br/>
+      <input class="form-control" name="title" type="text" ng-model="form.title"/><br/>
       <label for="image-file"> File to upload: </label>
-      <input name="image-file" type="file" ng-model="image.file" required/><br/>
-	  <button name="submit" class="btn btn-primary">Upload File</button><br/>
+      <input name="image-file" type="file" ng-model="form.file"/><br/>
+	  <button type="submit" name="submit" class="btn btn-primary" ngClick="submit">Send it.</button><br/>
     </form>
   
 

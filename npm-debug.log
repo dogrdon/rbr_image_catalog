@@ -1,28 +1,162 @@
 0 info it worked if it ends with ok
-1 verbose cli [ '/usr/bin/node', '/usr/bin/npm', 'start' ]
+1 verbose cli [ '/usr/bin/node', '/usr/bin/npm', '-g', 'install', 'http-server' ]
 2 info using npm@1.4.23
 3 info using node@v0.10.31
 4 verbose node symlink /usr/bin/node
-5 verbose run-script [ 'prestart', 'start', 'poststart' ]
-6 info prestart angular-seed@0.0.0
-7 verbose unsafe-perm in lifecycle true
-8 info start angular-seed@0.0.0
-9 verbose unsafe-perm in lifecycle true
-10 info angular-seed@0.0.0 Failed to exec start script
-11 error angular-seed@0.0.0 start: `http-server -a localhost -p 8000`
-11 error Exit status 8
-12 error Failed at the angular-seed@0.0.0 start script.
-12 error This is most likely a problem with the angular-seed package,
-12 error not with npm itself.
-12 error Tell the author that this fails on your system:
-12 error     http-server -a localhost -p 8000
-12 error You can get their info via:
-12 error     npm owner ls angular-seed
-12 error There is likely additional logging output above.
-13 error System Linux 3.2.0-24-virtual
-14 error command "/usr/bin/node" "/usr/bin/npm" "start"
-15 error cwd /home/droquo/rbr_image_catalog
-16 error node -v v0.10.31
-17 error npm -v 1.4.23
-18 error code ELIFECYCLE
-19 verbose exit [ 1, true ]
+5 verbose cache add [ 'http-server', null ]
+6 verbose cache add name=undefined spec="http-server" args=["http-server",null]
+7 verbose parsed url { protocol: null,
+7 verbose parsed url   slashes: null,
+7 verbose parsed url   auth: null,
+7 verbose parsed url   host: null,
+7 verbose parsed url   port: null,
+7 verbose parsed url   hostname: null,
+7 verbose parsed url   hash: null,
+7 verbose parsed url   search: null,
+7 verbose parsed url   query: null,
+7 verbose parsed url   pathname: 'http-server',
+7 verbose parsed url   path: 'http-server',
+7 verbose parsed url   href: 'http-server' }
+8 silly lockFile ed608307-http-server http-server
+9 verbose lock http-server /home/droquo/.npm/ed608307-http-server.lock
+10 silly lockFile ed608307-http-server http-server
+11 silly lockFile ed608307-http-server http-server
+12 verbose addNamed [ 'http-server', '' ]
+13 verbose addNamed [ null, '*' ]
+14 silly lockFile 550353c6-http-server http-server@
+15 verbose lock http-server@ /home/droquo/.npm/550353c6-http-server.lock
+16 silly addNameRange { name: 'http-server', range: '*', hasData: false }
+17 verbose request where is /http-server
+18 verbose request registry https://registry.npmjs.org/
+19 verbose request id c5a14fcc50fd6823
+20 verbose url raw /http-server
+21 verbose url resolving [ 'https://registry.npmjs.org/', './http-server' ]
+22 verbose url resolved https://registry.npmjs.org/http-server
+23 verbose request where is https://registry.npmjs.org/http-server
+24 info trying registry request attempt 1 at 00:08:35
+25 verbose etag "CKATVTSU20KGYQNPBSJGJ2HP"
+26 http GET https://registry.npmjs.org/http-server
+27 http 304 https://registry.npmjs.org/http-server
+28 silly registry.get cb [ 304,
+28 silly registry.get   { date: 'Thu, 25 Sep 2014 04:08:35 GMT',
+28 silly registry.get     server: 'Apache',
+28 silly registry.get     via: '1.1 varnish',
+28 silly registry.get     'last-modified': 'Thu, 25 Sep 2014 04:08:35 GMT',
+28 silly registry.get     'cache-control': 'max-age=60',
+28 silly registry.get     etag: '"CKATVTSU20KGYQNPBSJGJ2HP"',
+28 silly registry.get     'x-served-by': 'cache-atl6226-ATL',
+28 silly registry.get     'x-cache': 'MISS',
+28 silly registry.get     'x-cache-hits': '0',
+28 silly registry.get     'x-timer': 'S1411618115.652377,VS0,VE107',
+28 silly registry.get     vary: 'Accept',
+28 silly registry.get     'content-length': '0',
+28 silly registry.get     'keep-alive': 'timeout=10, max=50',
+28 silly registry.get     connection: 'Keep-Alive' } ]
+29 verbose etag https://registry.npmjs.org/http-server from cache
+30 silly addNameRange number 2 { name: 'http-server', range: '*', hasData: true }
+31 silly addNameRange versions [ 'http-server',
+31 silly addNameRange   [ '0.1.0',
+31 silly addNameRange     '0.1.1',
+31 silly addNameRange     '0.1.3',
+31 silly addNameRange     '0.2.1',
+31 silly addNameRange     '0.2.2',
+31 silly addNameRange     '0.2.3',
+31 silly addNameRange     '0.2.4',
+31 silly addNameRange     '0.2.5',
+31 silly addNameRange     '0.2.6',
+31 silly addNameRange     '0.2.9',
+31 silly addNameRange     '0.3.0',
+31 silly addNameRange     '0.4.0',
+31 silly addNameRange     '0.4.1',
+31 silly addNameRange     '0.5.0',
+31 silly addNameRange     '0.5.1',
+31 silly addNameRange     '0.5.2',
+31 silly addNameRange     '0.5.3',
+31 silly addNameRange     '0.5.5',
+31 silly addNameRange     '0.6.0',
+31 silly addNameRange     '0.6.1',
+31 silly addNameRange     '0.7.0',
+31 silly addNameRange     '0.7.1' ] ]
+32 verbose addNamed [ 'http-server', '0.7.1' ]
+33 verbose addNamed [ '0.7.1', '0.7.1' ]
+34 silly lockFile 0610e940-http-server-0-7-1 http-server@0.7.1
+35 verbose lock http-server@0.7.1 /home/droquo/.npm/0610e940-http-server-0-7-1.lock
+36 silly lockFile 0610e940-http-server-0-7-1 http-server@0.7.1
+37 silly lockFile 0610e940-http-server-0-7-1 http-server@0.7.1
+38 silly lockFile 550353c6-http-server http-server@
+39 silly lockFile 550353c6-http-server http-server@
+40 silly resolved [ { name: 'http-server',
+40 silly resolved     version: '0.7.1',
+40 silly resolved     author: { name: 'Nodejitsu', email: 'support@nodejitsu.com' },
+40 silly resolved     description: 'a simple zero-configuration command-line http server',
+40 silly resolved     main: './lib/http-server',
+40 silly resolved     repository:
+40 silly resolved      { type: 'git',
+40 silly resolved        url: 'git://github.com/nodeapps/http-server.git' },
+40 silly resolved     keywords: [ 'cli', 'command' ],
+40 silly resolved     scripts:
+40 silly resolved      { start: 'node ./bin/http-server',
+40 silly resolved        test: 'vows --spec --isolate' },
+40 silly resolved     contributors:
+40 silly resolved      [ [Object],
+40 silly resolved        [Object],
+40 silly resolved        [Object],
+40 silly resolved        [Object],
+40 silly resolved        [Object],
+40 silly resolved        [Object],
+40 silly resolved        [Object],
+40 silly resolved        [Object] ],
+40 silly resolved     dependencies:
+40 silly resolved      { colors: '0.6.x',
+40 silly resolved        optimist: '0.5.x',
+40 silly resolved        union: '0.3.x',
+40 silly resolved        ecstatic: '0.4.x',
+40 silly resolved        portfinder: '0.2.x',
+40 silly resolved        opener: '~1.3.0' },
+40 silly resolved     devDependencies: { vows: '0.7.x', request: '2.21.x' },
+40 silly resolved     bugs: { url: 'https://github.com/nodeapps/http-server/issues' },
+40 silly resolved     licenses: [ [Object] ],
+40 silly resolved     analyze: false,
+40 silly resolved     preferGlobal: 'true',
+40 silly resolved     bin: { 'http-server': './bin/http-server' },
+40 silly resolved     gitHead: '340e5304a35b858b3ac6f69ea0bfa54979ab3f17',
+40 silly resolved     homepage: 'https://github.com/nodeapps/http-server',
+40 silly resolved     _id: 'http-server@0.7.1',
+40 silly resolved     _shasum: '498de9fb5d23e455402b04d0404a029a55144466',
+40 silly resolved     _from: 'http-server@',
+40 silly resolved     _npmVersion: '2.0.0-beta.3',
+40 silly resolved     _npmUser: { name: 'indexzero', email: 'charlie.robbins@gmail.com' },
+40 silly resolved     maintainers: [ [Object], [Object], [Object] ],
+40 silly resolved     dist:
+40 silly resolved      { shasum: '498de9fb5d23e455402b04d0404a029a55144466',
+40 silly resolved        tarball: 'http://registry.npmjs.org/http-server/-/http-server-0.7.1.tgz' },
+40 silly resolved     directories: {},
+40 silly resolved     _resolved: 'https://registry.npmjs.org/http-server/-/http-server-0.7.1.tgz',
+40 silly resolved     readme: 'ERROR: No README data found!' } ]
+41 info install http-server@0.7.1 into /usr/lib
+42 info installOne http-server@0.7.1
+43 verbose lib/node_modules/http-server unbuild
+44 info preuninstall http-server@0.6.1
+45 info uninstall http-server@0.6.1
+46 verbose true,/usr/lib/node_modules,/usr/lib/node_modules unbuild http-server@0.6.1
+47 verbose /usr/bin,[object Object] binRoot
+48 verbose lib/node_modules/http-server unbuild
+49 info preuninstall http-server@0.6.1
+50 info uninstall http-server@0.6.1
+51 verbose true,/usr/lib/node_modules,/usr/lib/node_modules unbuild http-server@0.6.1
+52 verbose /usr/bin,[object Object] binRoot
+53 error error rolling back Error: EACCES, unlink '/usr/bin/http-server'
+53 error error rolling back  http-server@0.7.1 { [Error: EACCES, unlink '/usr/bin/http-server'] errno: 3, code: 'EACCES', path: '/usr/bin/http-server' }
+54 error Error: EACCES, unlink '/usr/bin/http-server'
+54 error  { [Error: EACCES, unlink '/usr/bin/http-server'] errno: 3, code: 'EACCES', path: '/usr/bin/http-server' }
+55 error Please try running this command again as root/Administrator.
+56 error System Linux 3.2.0-24-virtual
+57 error command "/usr/bin/node" "/usr/bin/npm" "-g" "install" "http-server"
+58 error cwd /home/droquo/rbr_image_catalog
+59 error node -v v0.10.31
+60 error npm -v 1.4.23
+61 error path /usr/bin/http-server
+62 error code EACCES
+63 error errno 3
+64 error stack Error: EACCES, unlink '/usr/bin/http-server'
+65 verbose exit [ 3, true ]
