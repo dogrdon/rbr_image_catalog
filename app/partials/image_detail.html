@@ -1,4 +1,11 @@
 <div id="image-detail" ng-model="thisImage">
 	<h2> {{thisImage.title}} </h2>
 	<p> {{thisImage.description}} </p>
+
+	<img class="img-detail" ng-src="{{thisImage.image_path}}"/>
+	<h3> Tags: </h3>
+	<div id="tag-list" class="tag-list" ng-repeat="tag in thisImage.tags">
+		<p> {{tag}} </p>
+
+	</div>
 </div>

@@ -21,7 +21,7 @@ angular.module('myApp.controllers', [])
     	$scope.imageSubmit = function(form){
 
         	//add image upload logic for submit, still needs 'backend', this obviously doesn't submit diddly
-        	console.log(form.title  + ' is file: ' + form.file + ' for upload. thanks for adding.');
+        	console.log(Object.getOwnPropertyNames(form)[1] + ' for upload. thanks for adding.');
         
       	};
   }])
@@ -34,7 +34,7 @@ angular.module('myApp.controllers', [])
 			
 			
 			
-			console.log('I am ' + $scope.thisImage); //item._id
+			console.log('I am ' + $scope.thisImage.title); //item.title
 			
 		});
 		
